@@ -1,6 +1,8 @@
+// declare var require: any
 
 import React from 'react';
 import styles from './styles.scss';
+// const styles = require('./styles.scss');
 
 function Tools() {
   return (

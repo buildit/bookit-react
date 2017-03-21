@@ -1,5 +1,6 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const concat = require('ramda').concat;
 
 module.exports = {
   reactHotLoader: true,
@@ -16,15 +17,15 @@ module.exports = {
       }));
 
       // Add TypeScript support
-      config.module.rules.push({
-        test: /\.tsx?$/,
-        loaders: ['awesome-typescript-loader'],
-        exclude: /(node_modules)/,
-      })
+      config.module.rules = concat(
+        [{
+          test: /\.tsx?$/,
+          loaders: ['awesome-typescript-loader'],
+          exclude: /(node_modules)/,
+        }],
+        config.module.rules
+      )
 
-      console.log('========');
-      console.log(config);
-      console.log('========');
     }
 
     return config;
