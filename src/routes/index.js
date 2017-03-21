@@ -15,7 +15,7 @@ const importHome = (nextState, cb) => {
 };
 
 const importTools = (nextState, cb) => {
-  System.import('../components/Tools')
+  System.import('../components/Tools/index.tsx')
     .then(module => cb(null, module.default))
     .catch((e) => { throw e; });
 };
@@ -34,7 +34,7 @@ const routes = (
 // https://github.com/gaearon/react-hot-loader/issues/288
 if (module.hot) {
   require('../components/Home');    // eslint-disable-line global-require
-  require('../components/Tools');   // eslint-disable-line global-require
+  require('../components/Tools/index.tsx');   // eslint-disable-line global-require
 }
 
 export default routes;
