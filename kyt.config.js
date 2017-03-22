@@ -20,12 +20,11 @@ module.exports = {
       config.module.rules = concat(
         [{
           test: /\.tsx?$/,
-          loaders: ['awesome-typescript-loader'],
+          loaders: ['ts-loader?jsx=true'],
           exclude: /(node_modules)/,
         }],
         config.module.rules
       )
-
     }
 
     return config;
