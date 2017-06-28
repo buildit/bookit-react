@@ -4,6 +4,7 @@
 Demo date: Wednesday June 28, 2017
 
 1) Email/invitation functionality
+2) Azure - Auth
 
 ## Inviting a user
 
