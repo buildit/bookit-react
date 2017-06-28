@@ -18,4 +18,3 @@ Demo date: Wednesday June 28, 2017
 - The user is added to the 'Wipro' team list.
 7) Log in to Outlook as Babs.
 8) See an email inviting me to Bookit.
-
