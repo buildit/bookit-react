@@ -4,7 +4,7 @@ Demo date: Wednesday June 28, 2017
 
 ## Inviting a user
 
-1) Log in to Bookit as Bruce.
+1) Log in to Bookit as Rasmus, a user with administrative permissions.
 2) Click 'Admin' to view the admin panel.
 3) Click '+' to add a user.
 4) Enter an email address in the form.
