@@ -2,8 +2,6 @@
 
 Demo date: Wednesday June 28, 2017
 
-1) Email invitation to Wipro users
-
 ## Inviting a user
 
 1) Log in to Bookit as Bruce.
