@@ -64,6 +64,11 @@ password: 'who da boss?'
 
 These credentials are [hardcoded into the server, along with a few other sample users](https://github.com/buildit/bookit-server/blob/master/src/service/stub/StubPasswordStore.ts).
 
+### Sample admin users
+roodmin@designitcontoso.onmicrosoft.com and rasmus@designitcontoso.onmicrosoft.com are both admin users. These users can see the Admin panel. All other users are forbidden from seeing this screen.
+
+Admin user authorization is currently stubbed out: see `src/lib/check-auth.js`.
+
 ## Design assets
 [Designs on Zeplin (must be granted access)](https://app.zeplin.io/project/58d4072283526a2ba8174a28)
 

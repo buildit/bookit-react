@@ -9,7 +9,11 @@ import { setClient } from '../actions'
  */
 
 const isUser = user => user.id && user.email && user.token
-const isAdmin = user => isUser(user) && (user.id === 1 || user.email === 'bruce@designitcontoso.onmicrosoft.com')
+const isAdmin = user => isUser(user) && (
+  user.email === 'rasmus@designitcontoso.onmicrosoft.com' ||
+  user.email === 'roodmin@designitcontoso.onmicrosoft.com' ||
+  user.id === 1
+)
 
 const checkStoredAuthorization = (dispatch, verifyUser) => {
   const storedUser = localStorage.getItem('user')
